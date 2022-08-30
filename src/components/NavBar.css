@@ -1,0 +1,43 @@
+.navMenu{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.navLink{
+    color: black;
+    margin: 20px;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.navLink:visited{
+    color: lightgrey;
+}
+
+.navLink:hover{
+    color: rgb(152, 210, 230);
+}
+
+.navBrand{
+    color: lightpink;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-top: 16px;
+
+}
+
+.navMenu{
+    list-style: none;
+}
+
+.navBarCont{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.navBar{
+    background-color: #d2f5ff;
+}

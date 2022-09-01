@@ -1,9 +1,10 @@
 import './NavBar.css';
 
-const NavBar = () => {
+const NavBar = ({children}) => {
     return (
         <nav className="navBar">
             <div className="navBarCont">
+                {children}
                 <a className="navBrand">GESCHENKBOX</a>
                 <ul className="navMenu">
                     <li><a className="navLink" href="#">Tú y Nosotros</a></li>

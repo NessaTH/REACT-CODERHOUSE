@@ -1,0 +1,25 @@
+.box{
+    background-color: #282c34;
+
+}
+.cardCounter{
+    background-color: #d2f5ff;
+    margin-top: 0;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    margin: 0px auto;
+
+}
+
+.flexCounter{
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+}
+
+p{
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}

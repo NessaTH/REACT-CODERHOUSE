@@ -9,6 +9,8 @@ const Data=[{
 {
     id: 2, 
     name: " Lapiz de panda",
+    price: "ARS 250",
+    detail: "Es un lápiz de tinta azul con adornos de Panda",
     img: "media/panda.png",
     stock: 25
 },

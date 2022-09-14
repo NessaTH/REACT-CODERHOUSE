@@ -2,8 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar/NavBar'
 import CartWidget from './components/CartWidget/CartWidget';
-import ItemListContainer from './containers/ItemListContainer/ItemListContainer';
+import ItemListContainer from './components/containers/ItemListContainer/ItemListContainer';
 import ItemCount from './components/ItemCount/ItemCount';
+import ItemDetailContainer from './components/containers/ItemDetailContainer/ItemDetailContainer';
 
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
       <NavBar>
         <CartWidget/>
       </NavBar>
+
+      <ItemDetailContainer/>
       <ItemListContainer greeting= "¡Bienvenidos a Geschenkbox!"/>
       <ItemCount stock={10}/>
 

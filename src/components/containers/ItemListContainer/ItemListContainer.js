@@ -1,7 +1,7 @@
 import "./ItemListContainer.css"
-import getFetch from "../Data/Data"
+import getFetch from "../../Data/Data"
 import { useState, useEffect } from "react"
-import ItemList from "../../components/ItemList/ItemList"
+import ItemList from "../../ItemList/ItemList"
 
 const ItemListContainer = (props) => {
 

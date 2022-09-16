@@ -1,0 +1,13 @@
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #282c34;
+    height: 100vh;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}

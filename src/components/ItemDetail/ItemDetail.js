@@ -1,12 +1,17 @@
-const ItemDetail = ({products}) => {
+import { useParams } from "react-router-dom";
+
+const ItemDetail = ({product}) => {
+
+   
     return(
+        
         <>
             <div>
-                <img src={`${products[1].img}`} width={150} height={150}/>
+                <img src={`${product.img}`} width={150} height={150}/>
                 <div>
-                    <h5>{products[1].name}</h5>
-                    <p>{products[1].detail}</p>
-                    <p>{products[1].price}</p>
+                    <h5>{product.name}</h5>
+                    <p>{product.detail}</p>
+                    <p>{product.price}</p>
                 </div>
             </div>
         </>

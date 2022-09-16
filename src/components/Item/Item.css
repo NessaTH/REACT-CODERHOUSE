@@ -1,0 +1,19 @@
+.card{
+    display: flex;
+    background-color: #282c34;
+    height: fit-content;
+}
+
+.innerCard{
+    margin: 30px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 20px;
+    background-color: white;
+    border-radius: 25% 10%;
+    height: 300px;
+}
+
+p{
+    width: 250px;
+}

@@ -25,6 +25,7 @@
     font-size: x-large;
     font-weight: bolder;
     margin-top: 16px;
+    text-decoration: none;
 
 }
 
@@ -41,3 +42,4 @@
 .navBar{
     background-color: #d2f5ff;
 }
+

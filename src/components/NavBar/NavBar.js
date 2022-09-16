@@ -1,16 +1,38 @@
 import './NavBar.css';
+import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = ({children}) => {
     return (
         <nav className="navBar">
             <div className="navBarCont">
                 {children}
-                <a className="navBrand">GESCHENKBOX</a>
+                <Link className="navBrand" to={"/"}>GESCHENKBOX</Link>
                 <ul className="navMenu">
-                    <li><a className="navLink" href="#">Tú y Nosotros</a></li>
-                    <li><a className="navLink" href="#">Armar Caja</a></li>
-                    <li><a className="navLink" href="#">Pedidos Especiales</a></li>
-                    <li><a className="navLink" href="#">Contacto</a></li>
+                    <li>
+                        <NavLink className="navLink" to={"/category/Electrónica"}>
+                            Electrónica
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink className="navLink" to={"/category/Cosmética"}>
+                            Cosmética
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink className="navLink" to={"/category/Experiencias"}>
+                            Experiencias
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink className="navLink" to={"/category/Miscelánea"}>
+                            Miscelánea
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink className="navLink" to={"/contact"}>
+                            Contacto
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
         </nav>

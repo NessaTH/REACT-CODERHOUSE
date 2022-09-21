@@ -1,9 +1,8 @@
-import {useState} from "react";
 import './ItemCount.css'
 
-const ItemCount = ({stock}) => {
+const ItemCount = ({stock, setItems, items}) => {
 
-    const [items, setItems] = useState(0)
+    
     
     const sumar = () => items <= stock -1 ? setItems(items + 1) : alert("¡Ya no hay stock!")
 
@@ -24,4 +23,4 @@ const ItemCount = ({stock}) => {
   )
 };
 
-export default ItemCount
+export default ItemCount;

@@ -1,20 +1,26 @@
-.card{
+.cardDetail{
     display: flex;
     background-color: #282c34;
     height: fit-content;
+    justify-content: center;
 }
 
-.innerCard{
-    margin: 50px;
+.innerCardDetail{
+    margin: 30px;
     padding-bottom: 25px;
     padding-right: 25px;
     padding-left: 20px;
     background-color: white;
     border-radius: 25% 10%;
-    height: 300px;
-    width: 250px;
+    height: 500px;
+
+    
 }
 
 p{
-    width: 250px;
+    width: 50%;
+    margin: auto;
+    padding: 15px 15px;
+
+    
 }

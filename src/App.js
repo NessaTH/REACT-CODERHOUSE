@@ -9,14 +9,6 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      {/* <NavBar>
-        <CartWidget/>
-      </NavBar>
-
-      <ItemDetailContainer/>
-      <ItemListContainer greeting= "¡Bienvenidos a Geschenkbox!"/>
-      <ItemCount stock={10}/> */}
-
       <BrowserRouter>
         <NavBar>
           <CartWidget/>
@@ -24,8 +16,8 @@ function App() {
         <Routes>
           <Route path="/" element={<ItemListContainer/>}/>
           <Route path="contact" element={<div>Contact</div>}/>
-          <Route path="detail/:id" element={<ItemDetailContainer/>}/>
-          <Route path="/category/:category" element={<ItemListContainer/>}/>
+          <Route path="/detail/:id" element={<ItemDetailContainer/>}/>
+          <Route path="/category/:category" element={<ItemListContainer greeting= "¡Bienvenidos a Geschenkbox!"/>}/>
         </Routes>
       </BrowserRouter>
 

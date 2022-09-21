@@ -1,5 +1,5 @@
 const Data=[{
-    id: 0,
+    id: "1",
     name: " Osito de peluche",
     price: "ARS 850,00",
     detail: "Peluche hipoalergénico con estuche para esencias",
@@ -8,7 +8,7 @@ const Data=[{
     category: "Miscelánea"
 },
 {
-    id: 1, 
+    id: "2", 
     name: " Lapiz de panda",
     price: "ARS 250,00",
     detail: "Es un lápiz de tinta azul con adornos de Panda",
@@ -18,7 +18,7 @@ const Data=[{
 
 },
 {
-    id: 2,
+    id: "3",
     name: " Mouse Rosa",
     price: "ARS 1.500,00",
     detail: "Mouse rosado Logitech con click silencioso",
@@ -28,7 +28,7 @@ const Data=[{
 
 },
 {
-    id: 3,
+    id: "4",
     name: " Teclado con luces",
     price: "ARS 2.650,00",
     detail: "Teclado gamer con luces de colores con ritmos y patrones configurables",
@@ -38,7 +38,7 @@ const Data=[{
 
 },
 {
-    id: 4,
+    id: "5",
     name: " Set de cremas",
     price: "ARS 1.200,00",
     detail: "Cremas veganas hidratantes con fragancia duradera",
@@ -48,7 +48,7 @@ const Data=[{
 
 },
 {
-    id: 5,
+    id: "6",
     name: " Clase de vuelo",
     price: "ARS 28.000,00",
     detail: "Clase de vuelo de tres horas con piloto altamente calificado",
@@ -56,7 +56,7 @@ const Data=[{
     category: "Experiencias"
 },
 {
-    id: 6,
+    id: "7",
     name: " Rafting en San Rafael",
     price: "ARS 7.800,00",
     detail: "Navegación en río Atuel con personal calificado y animadores. Incluye equipo y traslado desde centro de San Rafael",
@@ -65,16 +65,5 @@ const Data=[{
 
 }];
 
-const getFetch= new Promise((res, rej) => {
-    let condition=true
-    if(condition){
-        setTimeout(() =>{
-            res(Data)
-        }, 2000);
-    }
-    else{
-        rej(console.log("No se consiguió la Data"))
-    }
-});
 
-export default getFetch;
+export default Data;

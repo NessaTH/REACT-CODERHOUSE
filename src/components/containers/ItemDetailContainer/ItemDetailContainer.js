@@ -10,25 +10,23 @@ const ItemDetailContainer = () => {
   const {id} = useParams();
 
   useEffect(() =>{
-    getProducts()
-    .then((resp) => {
-      setProduct(resp)
+    getDetail
+    .then((response) => {
+      const dataFiltrada = response.filter((product) => product.id === id);
+      setProduct(...dataFiltrada);
     })
     .catch(err => console.log(err))
-  }, [])
+  });
 
-  const getProducts = new Promise((resolve, reject) => {
+  const getDetail = new Promise((resolve) => {
     setTimeout(() => {
-      resolve(Data.find(element => element.id===id))
-    }, 2000)
-  })
+      resolve(Data)
+     }, 2000)
+  });
 
   return (<>
-    {
-      product 
-      ? <ItemDetail products={product}></ItemDetail>
-      : <h2>OBTENIENDO DETALLE</h2>
-    }
+  <ItemDetail detail={product}/>
+
     </>)
 
 }

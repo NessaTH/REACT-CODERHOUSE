@@ -1,9 +1,17 @@
+import osito from './media/osito.png';
+import panda from './media/panda.png';
+import mouse from './media/mouse.png';
+import teclado from './media/teclado.png';
+import cremas from './media/cremas.png';
+import vuelo from './media/vuelo.png';
+import rafting from './media/rafting.png';
+
 const Data=[{
     id: "1",
     name: " Osito de peluche",
     price: "ARS 850,00",
     detail: "Peluche hipoalergénico con estuche para esencias",
-    img: "media/osito.png",
+    img: osito,
     stock: 10,
     category: "Miscelánea"
 },
@@ -12,7 +20,7 @@ const Data=[{
     name: " Lapiz de panda",
     price: "ARS 250,00",
     detail: "Es un lápiz de tinta azul con adornos de Panda",
-    img: "media/panda.png",
+    img: panda,
     stock: 25,
     category: "Miscelánea"
 
@@ -22,7 +30,7 @@ const Data=[{
     name: " Mouse Rosa",
     price: "ARS 1.500,00",
     detail: "Mouse rosado Logitech con click silencioso",
-    img: "media/mouse.png",
+    img: mouse,
     stock: 15,
     category: "Electrónica"
 
@@ -32,7 +40,7 @@ const Data=[{
     name: " Teclado con luces",
     price: "ARS 2.650,00",
     detail: "Teclado gamer con luces de colores con ritmos y patrones configurables",
-    img: "media/teclado.png",
+    img: teclado,
     stock: 5,
     category: "Electrónica"
 
@@ -42,7 +50,7 @@ const Data=[{
     name: " Set de cremas",
     price: "ARS 1.200,00",
     detail: "Cremas veganas hidratantes con fragancia duradera",
-    img: "media/cremas.png",
+    img: cremas,
     stock: 13,
     category: "Cosmética"
 
@@ -52,7 +60,7 @@ const Data=[{
     name: " Clase de vuelo",
     price: "ARS 28.000,00",
     detail: "Clase de vuelo de tres horas con piloto altamente calificado",
-    img: "media/vuelo.png",
+    img: vuelo,
     category: "Experiencias"
 },
 {
@@ -60,7 +68,7 @@ const Data=[{
     name: " Rafting en San Rafael",
     price: "ARS 7.800,00",
     detail: "Navegación en río Atuel con personal calificado y animadores. Incluye equipo y traslado desde centro de San Rafael",
-    img: "media/rafting.png",
+    img: rafting,
     category: "Experiencias"
 
 }];

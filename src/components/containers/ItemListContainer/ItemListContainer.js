@@ -2,7 +2,7 @@ import "./ItemListContainer.css"
 import Data from "../../Data/Data"
 import { useState, useEffect } from "react"
 import ItemList from "../../ItemList/ItemList"
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const ItemListContainer = (props) => {
     const {category} = useParams();
@@ -37,6 +37,7 @@ const ItemListContainer = (props) => {
     return (
         <>
             <div className="saludito">{props.greeting}</div>
+            <Link to="/cart" style={{color : "white"}}>Carrito</Link>
             {
                 loading ? <span>Cargando...</span> :
                 <ItemList products={data}></ItemList>

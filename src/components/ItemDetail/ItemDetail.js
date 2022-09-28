@@ -44,8 +44,6 @@ const ItemDetail = ({detail}) => {
                     <ItemCount stock={detail.stock} setItems={setItems} items={items}/>
                     <div>
                         <button onClick={() => onAdd(detail)}>AGREGAR AL CARRITO / COMPRAR</button>
-                        {/* <button onClick={() => onRemove(detail)}>REMOVER PRODUCTO</button>
-                        <button onClick={onClear}>LIMPIAR CARRITO</button> */}
                     </div>
                     <Link to={"/cart"}>
                         <button onClick={handleClick}>Ir al carrito</button>

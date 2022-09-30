@@ -5,12 +5,13 @@ import { Link } from 'react-router-dom';
 import { CartContext } from '../../context/cartContext';
 
 const ItemDetail = ({detail}) => {
-
+    
     const {addToCart} = useContext(CartContext);
     const {clear} = useContext(CartContext);
     const {removeItem} = useContext(CartContext);
 
     const [items, setItems] = useState(1)
+
     const handleClick = () =>{
         console.log(items);
     };

@@ -12,7 +12,7 @@ const CartWidget = () => {
       totalItemsCart() > 0 ? (
         <>
           <div> 
-            <Link to="/cart" className={totalItemsCart () <= 0 && "ocultar"}>
+            <Link to="/cart" >
               <img src={carrito} alt="Icono de regalo" className="iconoRegalo"/>
               <span>{totalItemsCart () }</span>
             </Link>

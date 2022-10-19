@@ -32,10 +32,11 @@ const ItemDetail = ({detail}) => {
         
         <>
             <div className="cardDetail">
+                <Link to="/">
+                        <button className="volver">VOLVER</button>
+                </Link>
                 <div className="innerCardDetail">
-                    <Link to="/">
-                        <button>VOLVER</button>
-                    </Link>
+
                     <img src={`${detail.img}`} alt={detail.name} width={150} height={150}/>
                     <div>
                         <h5>{detail.name}</h5>
@@ -44,7 +45,8 @@ const ItemDetail = ({detail}) => {
                     </div>
                     <ItemCount stock={detail.stock} setItems={setItems} items={items}/>
                     <div>
-                        <button onClick={() => onAdd(detail)}>AGREGAR AL CARRITO / COMPRAR</button>
+                        <button onClick={() => onAdd(detail)}>AGREGAR AL CARRITO</button>
+                        <button onClick={() => onRemove(detail.id)}>ELIMINAR PRODUCTO</button>
                     </div>
                     <Link to={"/cart"}>
                         <button onClick={handleClick}>Ir al carrito</button>

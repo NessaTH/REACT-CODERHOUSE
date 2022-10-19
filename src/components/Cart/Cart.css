@@ -1,0 +1,27 @@
+.cuadro{
+    background-color: white;
+    width: 500px;
+    border-radius: 25% 10%;
+    margin: 50px;
+    display: inline-block;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    background-color:  #d2f5ff;
+    width: 20%;
+    border-radius: 25% 10%;
+    padding: 30px;
+}
+
+.form, input{
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.lastButton{
+    margin: 10px 0 80px 0;
+}

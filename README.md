@@ -1,4 +1,4 @@
-#  TIENDA DE GUITARRAS DEL OESTE
+#  GESCHENKBOX TIENDA DE REGALOS 
 
 ## _ECOMMERCE Project in ReactJs_ 
 
@@ -11,7 +11,7 @@ Este proyecto fue realizado para el curso de React Js de Coderhouse [![coderhous
 
 ### Gif demostracion del flujo del sitio 
 
-
+![Alt Text](https://media.giphy.com/media/6vhPWg7S8mKO8XhJBZ/giphy.gif)
 
 ### Librerias usadas en este proyecto
 
